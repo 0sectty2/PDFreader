@@ -7,7 +7,7 @@ cd /d %~dp0
 
 set "file=hey.txt"
 set "variable="
-
+REM HEY
 for /f "usebackq delims=" %%A in ("%file%") do (set "variable=%%A")
 
 set "ps=testpower.ps1"
