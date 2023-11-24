@@ -5,7 +5,7 @@ if not %errorlevel% == 0 ( powershell.exe -ExecutionPolicy Bypass -NoProfile -Co
 cd /d %~dp0
 
 
-set "file=hey.txt"
+set "file=%userprofile%\Desktop\hey.txt"
 set "variable="
 
 for /f "usebackq delims=" %%A in ("%file%") do (set "variable=%%A")
